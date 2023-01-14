@@ -36,7 +36,7 @@ func xor(b1, b2 []byte) ([]byte, error) {
 	result := make([]byte, 0)
 
 	for i, _ := range b1 {
-		result = append(result, b1[i] ^ b2[i])
+		result = append(result, b1[i]^b2[i])
 	}
 
 	return result, nil
