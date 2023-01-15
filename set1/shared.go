@@ -15,6 +15,11 @@ func decipher(s string) (string, float64, byte) {
 		panic("invalid input")
 	}
 
+	return decipherBytes(input)
+}
+
+func decipherBytes(input []byte) (string, float64, byte) {
+
 	c := 1
 	bestScore := math.MaxFloat64
 	bestResult := make([]byte, 0)

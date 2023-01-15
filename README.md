@@ -9,3 +9,4 @@ This is also a project for getting more familar with [Go](https://go.dev). It’
 ### Set 1
 
 - To run challenge 4, do `go run shared.go 4.go`
+- To test challenge 6, do `go test 6.go 6_test.go`. To run challenge 6, do `go run shared.go 6.go`	
