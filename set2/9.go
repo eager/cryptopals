@@ -32,7 +32,7 @@ func pad(b []byte, block int) []byte {
 		p = block - len(b)
 	}
 	if p == 0 {
-		p = 16
+		p = block
 	}
 	pb := make([]byte, 0)
 	pb = append(pb, byte(p))

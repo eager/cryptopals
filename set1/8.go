@@ -29,6 +29,7 @@ func main() {
 
 		for len(cipher)-blockSize > 0 {
 			block := cipher[0:blockSize]
+			cipher = cipher[blockSize:]
 			for c := cipher; len(c) > blockSize; c = c[blockSize:] {
 
 				if bytes.Compare(block, c[0:blockSize]) == 0 {
@@ -36,7 +37,6 @@ func main() {
 				}
 
 			}
-			cipher = cipher[blockSize:]
 		}
 		if repeatedBlocks > bestRepeatedBlocks {
 			bestRepeatedBlocks = repeatedBlocks
