@@ -8,7 +8,7 @@ import (
 	"strings"
 )
 
-func main() {
+func main10() {
 	input, err := os.ReadFile("./10.txt")
 	if err != nil {
 		panic("could not read input")
@@ -73,15 +73,4 @@ func encrypt(p, k, iv []byte) []byte {
 	}
 
 	return c
-}
-
-func xor(a, b []byte) []byte {
-	if len(a) != len(b) {
-		panic("slice lengths differ")
-	}
-	r := make([]byte, len(a))
-	for i, v := range a {
-		r[i] = v ^ b[i]
-	}
-	return r
 }

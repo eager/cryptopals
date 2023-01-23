@@ -6,7 +6,7 @@ import (
 	"log"
 )
 
-func main() {
+func main9() {
 	s := "YELLOW SUBMARINE"
 	p := pad([]byte(s), 20)
 
